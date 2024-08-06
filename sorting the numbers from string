@@ -1,0 +1,45 @@
+j=-1
+v=[]
+n=[]
+x=[]
+z=[]
+q=''
+s=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+a=input('Enter a number')
+l=' '
+h=a+l
+b=len(a+l)
+
+for i in range(0,b):
+    c=h[i]
+    n.append(c)
+    if c in s:
+        v.append(c)
+        
+
+
+for r in list(v):
+    n.remove(r)
+   
+
+w=len(n)
+for r in range(0,w):
+    f=n[r]
+    q=q+f
+
+
+e=len(q)
+for i in range(0,e):
+    g=q[i]
+    if g==' ':
+        d=q[j+1:i]
+        j=i
+        x.append(d)
+x=[ele for ele in x if ele != '']
+x.sort()
+for b in list(x):
+    c=int(b)
+    print(c)
+    z.append(c)
+z.sort()
+print(z)
